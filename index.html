@@ -3,38 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabrico</title>
+    <title>Your Brand Name</title>
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            background: #fff;
+            min-height: 100vh;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
         h1 {
             font-size: 2.5em;
-            margin-bottom: 0.5em;
+            margin-bottom: 20px;
+            color: #222;
         }
+
         p {
             font-size: 1.2em;
             color: #555;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            text-align: left;
+        }
+
+        .description h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .description p {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p, .description p {
+                font-size: 1em;
+            }
+
+            .description h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Fabrico</h1>
-        <p>This is a future clothing brand that will offer stylish and trendy outfits, sold through dropshipping. Stay tuned for more updates!</p>
+        <h1>Fabrico/h1>
+        <p>Your future clothing brand, dedicated to offering stylish and trendy outfits through dropshipping. We aim to bring the latest fashion directly to your door with ease and affordability.</p>
+
+        <div class="description">
+            <h2>About Our Vision</h2>
+            <p>At Fabrico, our mission is to make fashion accessible to everyone. Whether you're looking for everyday wear or something unique to stand out, we've got you covered.</p>
+            
+            <h2>Why Choose Us?</h2>
+            <p>We focus on quality, style, and customer satisfaction. Our dropshipping model allows us to offer a wide range of products without the overhead, ensuring you get the best prices and the latest trends.</p>
+            
+            <h2>Stay Connected</h2>
+            <p>Follow our journey on TikTok and stay tuned for more updates as we prepare to launch our brand. We're building a community of fashion enthusiasts who are as passionate about style as we are.</p>
+        </div>
+
+        <footer>
+            &copy; 2024 Fabrico & NovaWear. All Rights Reserved.
+        </footer>
     </div>
 </body>
 </html>
